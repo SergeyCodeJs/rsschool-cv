@@ -1,10 +1,6 @@
 ## Sergey Stekh
 
----
-
 ## Frontent developer
-
----
 
 ## Contact information:
 
@@ -13,7 +9,6 @@
 **Email:** *sergeysteh@gmail.com*
 
 **Telegram:** *@SergSteh*
-
 
 ---
 
@@ -111,12 +106,12 @@ export default function ModulesList({state, modules, setState}) {
 
 ## Experience
 
-- Polaka (HTML, CSS, JS, React, PHP): [Polish language school](https://polaka.ru); [Language test example](https://polaka.ru/polaka-free/?render=test&lessonId=1); [Grammar test example](https://polaka.ru/polaka-free/?render=grammar&lessonId=2); [Drag&Drop Example](https://polaka.ru/polaka-free?render=spriazenie&lessonId=2); [Learning words example](https://polaka.ru/polaka-free?render=new_words&lessonId=3);
+- [Polish language school (HTML, CSS, JS, React, PHP)](https://polaka.ru); [Language test example](https://polaka.ru/polaka-free/?render=test&lessonId=1); [Grammar test example](https://polaka.ru/polaka-free/?render=grammar&lessonId=2); [Drag&Drop Example](https://polaka.ru/polaka-free?render=spriazenie&lessonId=2); [Learning words example](https://polaka.ru/polaka-free?render=new_words&lessonId=3);
 
-- [SongBird Game](https://song-bird-portfolio.netlify.app/) (HTML, CSS, React + Redux); [Source code](https://github.com/SergeyCodeJs/song-bird-portfolio);
+- [SongBird Game (HTML, CSS, React + Redux)](https://song-bird-portfolio.netlify.app/); [Source code](https://github.com/SergeyCodeJs/song-bird-portfolio);
 
-- [Quiz for KiwiTaxi international service](https://kiwitaxiquiz.netlify.app/) (HTML + CSS); [Source code](https://github.com/SergeyCodeJs/kiwitaxiQuiz);
-- [Expo Forum](https://expoforum.netlify.app/) (HTML, CSS);
+- [Quiz for KiwiTaxi international service (HTML + CSS)](https://kiwitaxiquiz.netlify.app/); [Source code](https://github.com/SergeyCodeJs/kiwitaxiQuiz);
+- [Expo Forum (HTML, CSS)](https://expoforum.netlify.app/);
 
 ---
 
@@ -132,7 +127,7 @@ export default function ModulesList({state, modules, setState}) {
 
 - **April 2020 - June 2020** - Udemy, "Practical JavaScript (advanced level)";
 
-- **June 2020 - August 2020** - Udemy, «React + Redux – Professional development».
+- **June 2020 - August 2020** - Udemy, "React + Redux – Professional development".
 
 
 
