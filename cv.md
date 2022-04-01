@@ -1,4 +1,6 @@
-TOPI# Sergey Stekh
+## Sergey Stekh
+
+---
 
 ## Frontent developer
 
@@ -6,11 +8,11 @@ TOPI# Sergey Stekh
 
 ## Contact information:
 
-**Phone:** +79199054867
+**Phone:** *+79199054867*
 
-**Email:** sergeysteh@gmail.com
+**Email:** *sergeysteh@gmail.com*
 
-**Telegram:** @SergSteh
+**Telegram:** *@SergSteh*
 
 
 ---
@@ -109,31 +111,28 @@ export default function ModulesList({state, modules, setState}) {
 
 ## Experience
 
-- Polaka - Polish language school (HTML, CSS, React, PHP): https://polaka.ru; Language test example: https://polaka.ru/polaka-free/?render=test&lessonId=1; Grammar test example: https://polaka.ru/polaka-free/?render=grammar&lessonId=2;
+- Polaka (HTML, CSS, JS, React, PHP): [Polish language school](https://polaka.ru); [Language test example](https://polaka.ru/polaka-free/?render=test&lessonId=1); [Grammar test example](https://polaka.ru/polaka-free/?render=grammar&lessonId=2); [Drag&Drop Example](https://polaka.ru/polaka-free?render=spriazenie&lessonId=2); [Learning words example](https://polaka.ru/polaka-free?render=new_words&lessonId=3);
 
-- SongBird Game (HTML, CSS, React + Redux):
-https://song-bird-portfolio.netlify.app/;
-Source code: https://github.com/SergeyCodeJs/song-bird-portfolio;
-- Quiz for KiwiTaxi international service (HTML + CSS):
-https://kiwitaxiquiz.netlify.app/; 
-Source code: https://github.com/SergeyCodeJs/kiwitaxiQuiz;
-- Expo Forum: https://expoforum.netlify.app/;
+- [SongBird Game](https://song-bird-portfolio.netlify.app/) (HTML, CSS, React + Redux); [Source code](https://github.com/SergeyCodeJs/song-bird-portfolio);
+
+- [Quiz for KiwiTaxi international service](https://kiwitaxiquiz.netlify.app/) (HTML + CSS); [Source code](https://github.com/SergeyCodeJs/kiwitaxiQuiz);
+- [Expo Forum](https://expoforum.netlify.app/) (HTML, CSS);
 
 ---
 
 ## Education:
 
-- June 2019 - September 2019 - HTMLAcademy HTML and CSS course;
+- **June 2019 - September 2019** - HTMLAcademy HTML and CSS course;
 
-- October 2019 - November 2019 - Codecademy: learn HTML; learn CSS; learn JavaScript; building interactive JavaScript sites.
+- **October 2019 - November 2019** - Codecademy: learn HTML; learn CSS; learn JavaScript; building interactive JavaScript sites.
 
-- September 2019 - April 2020 - Rolling scopes school (RS 2019 Q3);
+- **September 2019 - April 2020** - Rolling scopes school (RS 2019 Q3);
 
-- February 2020 - April 2020 - Udemy, "React JS – from beginner to professional";
+- **February 2020 - April 2020** - Udemy, "React JS – from beginner to professional";
 
-- April 2020 - June 2020 - Udemy, "Practical JavaScript (advanced level)";
+- **April 2020 - June 2020** - Udemy, "Practical JavaScript (advanced level)";
 
-- June 2020 - August 2020 - Udemy, «React + Redux – Professional development».
+- **June 2020 - August 2020** - Udemy, «React + Redux – Professional development».
 
 
 
