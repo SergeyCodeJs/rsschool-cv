@@ -23,3 +23,32 @@ Completed training at RS-School (2019-2020).
 After learning, I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this school is working, and many people use the software solutions I wrote, which is very inspiring for new achievements.
 
 For me, programming is not just a hobby, but also a lifestyle, a way to earn money, constant training and self-development. I want to achieve the maximum in this area, and become a truly professional developer.
+
+---
+
+## Skills:
+
+- HTML5; 
+- CSS3;
+- JavaScript;
+- React, Redux;
+- Computer science fundamentals;
+- Communication Protocols;
+- Git;
+- Webpack basics, GULP;
+- Basic PHP;
+- Vs Code;
+- Figma.
+
+## Soft Skills: 
+
+- Able to work effectively under supervision;
+- Ability to read, understand and clarify (if needed) task requirements;
+- Able to explain thoughts in English;
+- Able to present results of work to teammates;
+- Understands when advice is needed, able to involve other team members in case of problems;
+- Able to plan work time (Self-management, Time-management).
+
+---
+
+
