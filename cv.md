@@ -1,4 +1,4 @@
-# Sergey Stekh
+TOPI# Sergey Stekh
 
 ## Frontent developer
 
@@ -51,4 +51,55 @@ For me, programming is not just a hobby, but also a lifestyle, a way to earn mon
 
 ---
 
+## Code example: 
 
+```
+import React from "react"
+import "./ModulesList.css"
+
+export default function ModulesList({state, modules, setState}) {
+  
+  function changeModule(e, newModule) {
+    e.preventDefault();
+    setState((prevState) => {
+        return {
+            ...prevState,
+            previousModule: prevState.currentModule,
+            currentModule: newModule[0],
+            currentModuleName: newModule[1],
+            currentSubModule: "All questions",
+            data: {
+              ...prevState.data,
+              currentQuestionId: null,
+              isQuestionOpen: false,
+              questionData: null,
+              questionsToShow: 15
+            },
+            search: {
+              ...prevState.search,
+              isSearching: false,
+              searchString: "",
+              foundQuestions: null
+            },
+            showCategories: false,
+            testState: {
+              isShowingTest: false
+            }
+        }
+    })
+  }
+
+  return (
+    <>
+    <h2 className="modules-wrapper">Topics:</h2>
+    <div className="modules-list">
+      {modules.map((module, idx, arr) => {
+        const active = module[0] === state.currentModule;
+
+        return <div key={idx} className={active ? "single-module active" : "single-module"} onClick={(e) => changeModule(e, module)}>{module[1]}</div>
+      })}
+    </div>
+    </>
+  )
+}
+```
