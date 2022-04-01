@@ -18,7 +18,7 @@ TOPI# Sergey Stekh
 ## Briefly About Myself:
 
 I started my career as a frontend developer in 2019. I am very interested in developing various projects, learning new technologies and applying knowledge in practice.
-Completed training at RS-School (2019-2020). 
+Completed training at RS-School (RS 2019 Q3). 
 
 After learning, I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this school is working, and many people use the software solutions I wrote, which is very inspiring for new achievements.
 
@@ -30,6 +30,7 @@ For me, programming is not just a hobby, but also a lifestyle, a way to earn mon
 
 - HTML5; 
 - CSS3;
+- Bootstrap;
 - JavaScript;
 - React, Redux;
 - Computer science fundamentals;
@@ -103,3 +104,17 @@ export default function ModulesList({state, modules, setState}) {
   )
 }
 ```
+
+---
+
+## Expirience
+
+- Polaka - Polish language school (HTML, CSS, React, PHP): https://polaka.ru; Language test example: https://polaka.ru/polaka-free/?render=test&lessonId=1; Grammar test example: https://polaka.ru/polaka-free/?render=grammar&lessonId=2;
+- SongBird Game (HTML, CSS, React + Redux):
+https://song-bird-portfolio.netlify.app/;
+Source code: https://github.com/SergeyCodeJs/song-bird-portfolio;
+- Quiz for KiwiTaxi international service (HTML + CSS):
+https://kiwitaxiquiz.netlify.app/; 
+Source code: https://github.com/SergeyCodeJs/kiwitaxiQuiz;
+- Expo Forum: https://expoforum.netlify.app/;
+
