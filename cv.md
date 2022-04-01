@@ -129,5 +129,13 @@ export default function ModulesList({state, modules, setState}) {
 
 - **June 2020 - August 2020** - Udemy, "React + Redux – Professional development".
 
+---
 
+## Languages:
+
+- English - Intermediate/Upper-intermediate;
+
+- Polish - Upper-intermediate;
+
+- Russian - Native.
 
