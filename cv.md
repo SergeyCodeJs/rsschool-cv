@@ -107,7 +107,7 @@ export default function ModulesList({state, modules, setState}) {
 
 ---
 
-## Expirience
+## Experience
 
 - Polaka - Polish language school (HTML, CSS, React, PHP): https://polaka.ru; Language test example: https://polaka.ru/polaka-free/?render=test&lessonId=1; Grammar test example: https://polaka.ru/polaka-free/?render=grammar&lessonId=2;
 - SongBird Game (HTML, CSS, React + Redux):
