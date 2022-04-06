@@ -113,7 +113,7 @@ function changeModule(e, newModule) {
 
 return (
   &lt;&gt;
-  &lt;h2 className="modules-wrapper"&lt;Topics:&gt;/h2&gt;
+  &lt;h2 className="modules-wrapper"&gt;Topics:&lt;/h2&gt;
   &lt;div className="modules-list"&gt;
     {modules.map((module, idx, arr) => {
       const active = module[0] === state.currentModule;
@@ -127,6 +127,36 @@ return (
         </pre>
       </code>
     </section>
+    <section class="experience">
+      <h2 class="experience__title">Experience :</h2>
+      <ul class="experience__list">
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://polaka.ru" target="_blank">Polish language school (HTML, CSS, JS, React, PHP):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free/?render=test&lessonId=1" target="_blank">Language test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free/?render=grammar&lessonId=2" target="_blank">Grammar test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free?render=spriazenie&lessonId=2" target="_blank">Drag&Drop example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free?render=new_words&lessonId=3" target="_blank">Learning words example;</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://song-bird-portfolio.netlify.app/" target="_blank">SongBird Game (HTML, CSS, React + Redux):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://github.com/SergeyCodeJs/song-bird-portfolio" target="_blank">Source code</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://kiwitaxiquiz.netlify.app/" target="_blank">Quiz for KiwiTaxi international service (HTML + CSS):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://github.com/SergeyCodeJs/kiwitaxiQuiz)" target="_blank">Source code</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://expoforum.netlify.app/" target="_blank">Expo Forum (HTML, CSS).</a>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
+

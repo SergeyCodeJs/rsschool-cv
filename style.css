@@ -330,6 +330,7 @@ content: counter(li);
   padding: 20px;
   font-size: 10px;
   transition: background-color .3s ease;
+  margin-bottom: 20px;
 }
 
 .code-example__pre:hover {
@@ -340,4 +341,68 @@ content: counter(li);
   .code-example__pre {
     font-size: 16px;
   }
+}
+
+/* Experience section */
+
+.experience__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.experience__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience__item {
+  position: relative;
+  color: #666666;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.experience__item--margin {
+  margin-bottom: 10px;
+}
+
+.experience__item:last-child {
+  padding-bottom: 0px;
+}
+
+.experience__item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 2px solid #157698;
+}
+
+
+.experience__link {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.experience__link:hover {
+  filter: drop-shadow(.1px .1px .1px #000);
+  transform: scale(1.05);
 }
