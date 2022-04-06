@@ -406,3 +406,78 @@ content: counter(li);
   filter: drop-shadow(.1px .1px .1px #000);
   transform: scale(1.05);
 }
+
+/* Education section */
+
+.education__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.education__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education__item {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  grid-template-rows: max-content max-content;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.education__item-technology {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.education__item-term {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.education__item-name {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #157698;
+  font-weight: bold;
+}
+
+@media (min-width: 380px) {
+  .education__item {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .education__item-technology {
+    font-size: 16px;
+  }
+  
+  .education__item-term {
+    font-size: 16px;
+  }
+  
+  .education__item-name {
+    font-size: 16px;
+  }
+  
+}
