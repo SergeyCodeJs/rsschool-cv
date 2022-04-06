@@ -176,6 +176,7 @@ body {
 
   .contacts-list {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 25px;
     grid-column-gap: 0;
   }
@@ -229,6 +230,10 @@ body {
 }
 
 .skills__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -237,6 +242,7 @@ body {
 
 .skills__item {
 position: relative;
+width: max-content;
 margin-bottom: 1.5em;
 border: 3px solid #157698;;
 padding: 0.6em;
@@ -256,4 +262,46 @@ background: #FEFEFE;
 border-radius: 50%;
 counter-increment: li;
 content: counter(li);
+}
+
+/* Soft skills section */
+
+.soft-skills__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.soft-skills__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.soft-skills__item {
+  position: relative;
+  color: #666666;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.soft-skills__item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: 2px solid #157698;
 }
