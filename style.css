@@ -4,7 +4,7 @@ body {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -155,7 +155,7 @@ body {
     width: 80vw;
     height: 100vh;
     background: url("lines.svg");
-    opacity: .3;
+    opacity: .1;
     position: absolute;
     top: 0;
     right: 0;
@@ -192,3 +192,68 @@ body {
 }
 
 
+/* About section */
+
+.about {
+  padding-top: 30px;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+}
+
+.about__text {
+  color: #666666;
+}
+
+
+/* Skills section */
+
+.skills {
+  padding-top: 10px;
+}
+
+.skills__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+  }
+
+.skills__item {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #157698;;
+padding: 0.6em;
+border-radius: 4px;
+background: #FEFEFE;
+color: #231F20;
+}
+
+.skills__item:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-weight: 700;
+color: #A9A9A9;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
