@@ -1,0 +1,185 @@
+body {
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+}
+
+.avatar__img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(.7);
+}
+
+.personal-info__name {
+  margin: 0;
+  padding: 0;
+  padding: 20px 0;
+  font-weight: 900;
+  font-size: 2.9rem;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #157698;
+}
+
+.personal-info__surname {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 2.9rem;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #A9A9A9;
+}
+
+.personal-info__profession {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #157698;
+  text-transform: uppercase;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list__item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.contacts__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.contacts__content {
+  display: block;
+  width: max-content;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: filter .3s linear, transform .3s ease-in;
+  cursor: pointer;
+}
+
+.contacts__content:hover,
+.contacts__content:active {
+  filter: drop-shadow(.1px .1px .1px #000);
+  transform: scale(1.03);
+}
+
+@media (min-width: 500px) {
+  .header {
+    padding-top: 50px;
+    grid-template-columns: .8fr 1.2fr;
+    grid-template-rows: 1fr 1fr; 
+  }
+
+  .avatar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .personal-info {
+    margin-left: 7%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+  }
+
+  .contacts {
+    margin-left: 7%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .header {
+    grid-template-columns: 302px 1fr;
+    grid-template-rows: 151px 151px;
+  }
+
+  .contacts {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+  }
+
+  .contacts-list {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 11%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 0 50px;
+  }
+
+  .personal-info__name {
+    font-size: 3rem;
+  }
+
+  .personal-info__surname {
+    font-size: 3rem;
+  }
+
+  .personal-info__profession {
+    font-size: 1.5rem;
+  }
+
+  .contacts-list {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 0;
+  }
+
+  .contacts__content {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    padding: 0 100px;
+  }
+}

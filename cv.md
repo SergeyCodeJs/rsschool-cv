@@ -1,6 +1,6 @@
 ## Sergey Stekh
 
-## Frontent developer
+## Frontend developer
 
 ## Contact information:
 
@@ -8,7 +8,7 @@
 
 **Email:** *sergeysteh@gmail.com*
 
-**Telegram:** *@SergSteh*
+**Telegram:** *@SergStekh*
 
 ---
 
