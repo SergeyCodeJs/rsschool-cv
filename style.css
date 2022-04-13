@@ -84,6 +84,7 @@ body {
 }
 
 .contacts__content {
+  position: relative;
   display: block;
   width: max-content;
   color: #000000;
@@ -91,6 +92,30 @@ body {
   font-size: 1.4rem;
   transition: filter .3s linear, transform .3s ease-in;
   cursor: pointer;
+  padding-left: 30px;
+}
+
+.contacts__content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts-list__item:nth-child(1) .contacts__content::before {
+  background-image: url("phone.png");
+}
+
+.contacts-list__item:nth-child(2) .contacts__content::before {
+  background-image: url("email.png");
+}
+
+.contacts-list__item:nth-child(3) .contacts__content::before {
+  background-image: url("telegram.png");
 }
 
 .contacts__content:hover,
