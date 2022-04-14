@@ -19,6 +19,8 @@ body {
 }
 
 .navigation {
+  max-width: 1240px;
+  margin: 0 auto;
   position: fixed;
   top: 2px;
   left: 10px;
