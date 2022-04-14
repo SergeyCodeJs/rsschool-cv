@@ -9,6 +9,28 @@
 </head>
 <body>
   <header class="header">
+    <nav class="header__nav navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#AboutMe">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Skills">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#CodeExample">Code example</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Experience">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Education">Education</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
     <div class="avatar">
       <img class="avatar__img" src="avatar.png" alt="avatar">
     </div>
@@ -33,7 +55,7 @@
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="AboutMe">
       <h2 class="about__title">
         Briefly About Myself :
       </h2>
@@ -42,7 +64,7 @@
       <p class="about__text"> After learning, I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this school is working, and many people use the software solutions I wrote, which is very inspiring for new achievements.</p>
       <p class="about__text"> For me, programming is not just a hobby, but also a lifestyle, a way to earn money, constant training and self-development. I want to achieve the maximum in this area, and become a truly professional developer.</p>
     </section>
-    <section class="skills">
+    <section class="skills" id="Skills">
       <h2 class="skills__title">Skills :</h2>
       <ol class="skills__list">
         <li class="skills__item">HTML5</li>
@@ -71,7 +93,7 @@
         <li class="soft-skills__item">Able to plan work time (Self-management, Time-management).</li>
       </ul>
     </section>
-    <section class="code-example">
+    <section class="code-example" id="CodeExample">
       <h2 class="code-example__title">Code example :</h2>
       <pre class="code-example__pre">
       <code class="code-example__code">
@@ -126,7 +148,7 @@ return (
       </code>
     </pre>
     </section>
-    <section class="experience">
+    <section class="experience" id="Experience">
       <h2 class="experience__title">Experience :</h2>
       <ul class="experience__list">
         <li class="experience__item experience__item--margin">
@@ -155,7 +177,7 @@ return (
         </li>
       </ul>
     </section>
-    <section class="education">
+    <section class="education" id="Education">
       <h2 class="education__title">Education :</h2>
       <ul class="education__list">
         <li class="education__item">
@@ -190,7 +212,7 @@ return (
         </li>
       </ul>
     </section>
-    <section class="languages">
+    <section class="languages" id="Languages">
       <h2 class="languages__title">Languages: </h2>
       <ul class="languages__list">
         <li class="languages__item">English - Intermediate/Upper-intermediate;</li>
