@@ -575,6 +575,7 @@ footer {
 .footer__name {
   text-transform: uppercase;
   color: #157698;
+  text-decoration: none;
 }
 
 .footer__surname {
