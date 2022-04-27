@@ -4,7 +4,7 @@
 
 ## Contact information:
 
-**Phone:** *+79199054867*
+**Phone:** *+48 512 964 497*
 
 **Email:** *sergeysteh@gmail.com*
 
