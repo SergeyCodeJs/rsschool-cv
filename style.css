@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   box-sizing: border-box;
@@ -147,15 +151,15 @@ body {
 }
 
 .contacts-list__item:nth-child(1) .contacts__content::before {
-  background-image: url("phone.png");
+  background-image: url("./assets/images/phone.png");
 }
 
 .contacts-list__item:nth-child(2) .contacts__content::before {
-  background-image: url("email.png");
+  background-image: url("./assets/images/email.png");
 }
 
 .contacts-list__item:nth-child(3) .contacts__content::before {
-  background-image: url("telegram.png");
+  background-image: url("./assets/images/telegram.png");
 }
 
 .contacts__content:hover,
@@ -234,8 +238,9 @@ body {
     content: "";
     width: 80vw;
     height: 100vh;
-    background: url("lines.svg");
-    opacity: .1;
+    background: url("./assets/images/lines.svg");
+    background-size: cover;
+    opacity: .3;
     position: absolute;
     top: 0;
     right: 0;
@@ -270,6 +275,10 @@ body {
   body {
     padding: 0 100px;
   }
+  .navigation {
+    left: 100px;
+    right: 100px;
+}
 }
 
 
@@ -656,5 +665,11 @@ footer {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  body::before {
+    display: none;
   }
 }

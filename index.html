@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>CV. HTML, CSS & Git Basics</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Sergei Stekh CV. Frontend developer</title>
 </head>
 <body>
   <header class="header">
@@ -32,10 +33,10 @@
       </ul>
     </nav>
     <div class="avatar">
-      <img class="avatar__img" src="avatar.png" alt="avatar">
+      <img class="avatar__img" src="./assets/images/avatar.png" alt="avatar">
     </div>
     <div class="personal-info" id="name">
-      <h1 class="personal-info__name">Sergey&nbsp; 
+      <h1 class="personal-info__name">Sergei&nbsp; 
         <span class="personal-info__surname">Stekh</span>
       </h1>
       <p class="personal-info__profession">Frontend developer</p>
@@ -59,24 +60,26 @@
       <h2 class="about__title">
         Briefly About Myself :
       </h2>
-      <p class="about__text">I started my career as a frontend developer in 2019. I am very interested in developing various projects, learning new technologies and applying knowledge in practice.
-        Completed training at RS-School (RS 2019 Q3).</p>
-      <p class="about__text"> After learning, I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this school is working, and many people use the software solutions I wrote, which is very inspiring for new achievements.</p>
-      <p class="about__text"> For me, programming is not just a hobby, but also a lifestyle, a way to earn money, constant training and self-development. I want to achieve the maximum in this area, and become a truly professional developer.</p>
+      <p class="about__text">I started my career as a frontend developer in 2019. I am very interested in developing various projects, learning new technologies and applying knowledge in practice.</p>
+      <p class="about__text">I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this startup is released, and many people use the software solutions I wrote, which is very inspiring for new achievements.</p>
+      <p class="about__text">For me, writing JS code is not just a hobby, but also a lifestyle, constant training and self-development. Always looking for ways to improve my code and make more readable, professional and clear. It's inspiring, when web-applications emerge from an idea. I would like to continue creating valuable, useful, professional web-applications which can make people's life easier and better.</p>
     </section>
     <section class="skills" id="Skills">
       <h2 class="skills__title">Skills :</h2>
       <ol class="skills__list">
         <li class="skills__item">HTML5</li>
         <li class="skills__item">CSS3</li>
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">TypeScript</li>
+        <li class="skills__item">React, Redux</li>
         <li class="skills__item">Bootstrap</li>
         <li class="skills__item">SASS</li>
-        <li class="skills__item">JavaScript</li>
-        <li class="skills__item">React, Redux</li>
-        <li class="skills__item">Computer science fundamentals</li>
-        <li class="skills__item">Communication Protocols</li>
+        <li class="skills__item">BEM</li>
+        <li class="skills__item">Communication Protocols (HTTP, WS, REST)</li>
+        <li class="skills__item">Programming Paradigms (OOP, FP)</li>
+        <li class="skills__item">Browser API</li>
         <li class="skills__item">Git</li>
-        <li class="skills__item">Webpack basics, GULP</li>
+        <li class="skills__item">Webpack, GULP</li>
         <li class="skills__item">Basic PHP</li>
         <li class="skills__item">Vs Code</li>
         <li class="skills__item">Figma</li>
@@ -89,7 +92,7 @@
         <li class="soft-skills__item">Ability to read, understand and clarify (if needed) task requirements;</li>
         <li class="soft-skills__item">Able to explain thoughts in English;</li>
         <li class="soft-skills__item">Able to present results of work to teammates;</li>
-        <li class="soft-skills__item">Understands when advice is needed, able to involve other team members in case of problems;</li>
+        <li class="soft-skills__item">Understand when advice is needed, able to involve other team members in case of problems;</li>
         <li class="soft-skills__item">Able to plan work time (Self-management, Time-management).</li>
       </ul>
     </section>
@@ -154,10 +157,10 @@ return (
         <li class="experience__item experience__item--margin">
           <a class="experience__link" href="https://polaka.ru" target="_blank">Polish language school (HTML, CSS, JS, React, PHP):</a>
           <ul class="experience__list">
-            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free/?render=test&lessonId=1" target="_blank">Language test example;</a></li>
-            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free/?render=grammar&lessonId=2" target="_blank">Grammar test example;</a></li>
-            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free?render=spriazenie&lessonId=2" target="_blank">Drag&Drop example;</a></li>
-            <li class="experience__item"><a class="experience__link" href="https://polaka.ru/polaka-free?render=new_words&lessonId=3" target="_blank">Learning words example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free/?render=test&lessonId=1" target="_blank">Language test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free/?render=grammar&lessonId=2" target="_blank">Grammar test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free?render=spriazenie&lessonId=2" target="_blank">Drag&Drop example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free?render=new_words&lessonId=3" target="_blank">Learning words example;</a></li>
           </ul>
         </li>
         <li class="experience__item experience__item--margin">
@@ -210,6 +213,11 @@ return (
           <p class="education__item-term">June 2020 - August 2020</p>
           <p class="education__item-name">React + Redux – Professional development</p>
         </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">HTML, CSS, JS, TypeScript, Angular</h3>
+          <p class="education__item-term">March 2022 - In Progress</p>
+          <p class="education__item-name">RSSchool (JS/FE Course 2022)</p>
+        </li>
       </ul>
     </section>
     <section class="languages" id="Languages">
@@ -217,22 +225,21 @@ return (
       <ul class="languages__list">
         <li class="languages__item">English - Intermediate/Upper-intermediate;</li>
         <li class="languages__item">Polish - Upper-intermediate;</li>
-        <li class="languages__item">Russian - Native.</li>
+        <li class="languages__item">Russian - Native</li>
       </ul>
     </section>
   </main>
   <footer class="footer">
     <div>
-      <a class="footer__name" href="#name">Sergey 
+      <a class="footer__name" href="#name">Sergei 
         <span class="footer__surname">Stekh</span>
       </a>
-      <p class="footer__date">04/2022</p>
   </div>
     <a class="footer__link" href="https://rs.school/" target="_blank">
-      <img src="rs_school.svg" alt="rs school logo" class="footer__logo">
+      <img src="./assets/images/rs_school.svg" alt="rs school logo" class="footer__logo">
     </a>
     <a class="footer__git" href="https://github.com/SergeyCodeJs/" target="_blank">
-      <img class="footer__git-logo" src="git-icon.png" alt="github logo">
+      <img class="footer__git-logo" src="./assets/images/git-icon.png" alt="github logo">
       <p class="footer__git-name">SergeyCodeJs</p>
     </a>
   </footer>
