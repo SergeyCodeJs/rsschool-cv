@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Sergei Stekh CV. Frontend developer</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#AboutMe">About me</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Skills">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#CodeExample">Code example</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Experience">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Education">Education</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#Languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="avatar">
+      <img class="avatar__img" src="./assets/images/avatar.png" alt="avatar">
+    </div>
+    <div class="personal-info" id="name">
+      <h1 class="personal-info__name">Sergei&nbsp; 
+        <span class="personal-info__surname">Stekh</span>
+      </h1>
+      <p class="personal-info__profession">Frontend developer</p>
+    </div>
+    <div class="contacts">
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <a class="contacts__content" href="tel:48512964497">+48 512 964 497</a>
+        </li>
+        <li class="contacts-list__item">
+          <a class="contacts__content" href="mailto:sergeysteh@gmail.com">sergeysteh@gmail.com</a>
+        </li>
+        <li class="contacts-list__item">
+          <a class="contacts__content" href="https://telegram.me/SergStekh">@SergStekh</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="about" id="AboutMe">
+      <h2 class="about__title">
+        Briefly About Myself :
+      </h2>
+      <p class="about__text">I started my career as a frontend developer in 2019. I am very interested in developing various projects, learning new technologies and applying knowledge in practice.</p>
+      <p class="about__text">I worked on various freelance projects, but my main passion was programming and creating a startup - a Polish language school. This project uses PHP as the backend, and React is responsible for the frontend. Now this startup is released, and many people use the software solutions I wrote, which is very inspiring for new achievements.</p>
+      <p class="about__text">For me, writing JS code is not just a hobby, but also a lifestyle, constant training and self-development. Always looking for ways to improve my code and make more readable, professional and clear. It's inspiring, when web-applications emerge from an idea. I would like to continue creating valuable, useful, professional web-applications which can make people's life easier and better.</p>
+    </section>
+    <section class="skills" id="Skills">
+      <h2 class="skills__title">Skills :</h2>
+      <ol class="skills__list">
+        <li class="skills__item">HTML5</li>
+        <li class="skills__item">CSS3</li>
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">TypeScript</li>
+        <li class="skills__item">React, Redux</li>
+        <li class="skills__item">Bootstrap</li>
+        <li class="skills__item">SASS</li>
+        <li class="skills__item">BEM</li>
+        <li class="skills__item">Communication Protocols (HTTP, WS, REST)</li>
+        <li class="skills__item">Programming Paradigms (OOP, FP)</li>
+        <li class="skills__item">Browser API</li>
+        <li class="skills__item">Git</li>
+        <li class="skills__item">Webpack, GULP</li>
+        <li class="skills__item">Basic PHP</li>
+        <li class="skills__item">Vs Code</li>
+        <li class="skills__item">Figma</li>
+      </ol>
+    </section>
+    <section class="soft-skills">
+      <h2 class="soft-skills__title">Soft Skills: </h2>
+      <ul class="soft-skills__list">
+        <li class="soft-skills__item">Able to work effectively under supervision;</li>
+        <li class="soft-skills__item">Ability to read, understand and clarify (if needed) task requirements;</li>
+        <li class="soft-skills__item">Able to explain thoughts in English;</li>
+        <li class="soft-skills__item">Able to present results of work to teammates;</li>
+        <li class="soft-skills__item">Understand when advice is needed, able to involve other team members in case of problems;</li>
+        <li class="soft-skills__item">Able to plan work time (Self-management, Time-management).</li>
+      </ul>
+    </section>
+    <section class="code-example" id="CodeExample">
+      <h2 class="code-example__title">Code example :</h2>
+      <pre class="code-example__pre">
+      <code class="code-example__code">
+import React from "react"
+import "./ModulesList.css"
+
+export default function ModulesList({state, modules, setState}) {
+  
+function changeModule(e, newModule) {
+  e.preventDefault();
+  setState((prevState) => {
+      return {
+          ...prevState,
+          previousModule: prevState.currentModule,
+          currentModule: newModule[0],
+          currentModuleName: newModule[1],
+          currentSubModule: "All questions",
+          data: {
+            ...prevState.data,
+            currentQuestionId: null,
+            isQuestionOpen: false,
+            questionData: null,
+            questionsToShow: 15
+          },
+          search: {
+            ...prevState.search,
+            isSearching: false,
+            searchString: "",
+            foundQuestions: null
+          },
+          showCategories: false,
+          testState: {
+            isShowingTest: false
+          }
+      }
+  })
+}
+
+return (
+  &lt;&gt;
+  &lt;h2 className="modules-wrapper"&gt;Topics:&lt;/h2&gt;
+  &lt;div className="modules-list"&gt;
+    {modules.map((module, idx, arr) => {
+      const active = module[0] === state.currentModule;
+
+      return &lt;div key={idx} className={active ? "single-module active" : "single-module"} onClick={(e) => changeModule(e, module)}>{module[1]}&lt;/div&gt;
+    })}
+  &lt;/div&gt;
+  &lt;/&gt;
+)
+}
+      </code>
+    </pre>
+    </section>
+    <section class="experience" id="Experience">
+      <h2 class="experience__title">Experience :</h2>
+      <ul class="experience__list">
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://polaka.ru" target="_blank">Polish language school (HTML, CSS, JS, React, PHP):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free/?render=test&lessonId=1" target="_blank">Language test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free/?render=grammar&lessonId=2" target="_blank">Grammar test example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free?render=spriazenie&lessonId=2" target="_blank">Drag&Drop example;</a></li>
+            <li class="experience__item"><a class="experience__link" href="https://polaka.pl/polaka-free?render=new_words&lessonId=3" target="_blank">Learning words example;</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://song-bird-portfolio.netlify.app/" target="_blank">SongBird Game (HTML, CSS, React + Redux):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://github.com/SergeyCodeJs/song-bird-portfolio" target="_blank">Source code</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://kiwitaxiquiz.netlify.app/" target="_blank">Quiz for KiwiTaxi international service (HTML + CSS):</a>
+          <ul class="experience__list">
+            <li class="experience__item"><a class="experience__link" href="https://github.com/SergeyCodeJs/kiwitaxiQuiz)" target="_blank">Source code</a></li>
+          </ul>
+        </li>
+        <li class="experience__item experience__item--margin">
+          <a class="experience__link" href="https://expoforum.netlify.app/" target="_blank">Expo Forum (HTML, CSS).</a>
+        </li>
+      </ul>
+    </section>
+    <section class="education" id="Education">
+      <h2 class="education__title">Education :</h2>
+      <ul class="education__list">
+        <li class="education__item">
+          <h3 class="education__item-technology">HTML, CSS</h3>
+          <p class="education__item-term">June 2019 - September 2019</p>
+          <p class="education__item-name">HTMLAcademy HTML and CSS course</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">HTML, CSS, JS</h3>
+          <p class="education__item-term">October 2019 - November 2019</p>
+          <p class="education__item-name">Codecademy: learn HTML; learn CSS; learn JavaScript; building interactive JavaScript sites.</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">HTML, CSS, JS, React, Redux</h3>
+          <p class="education__item-term">September 2019 - April 2020</p>
+          <p class="education__item-name">Rolling scopes school (RS 2019 Q3)</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">React</h3>
+          <p class="education__item-term">February 2020 - April 2020</p>
+          <p class="education__item-name">Udemy: React JS – from beginner to professional</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">JS</h3>
+          <p class="education__item-term">April 2020 - June 2020</p>
+          <p class="education__item-name">Practical JavaScript (advanced level)</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">React, Redux</h3>
+          <p class="education__item-term">June 2020 - August 2020</p>
+          <p class="education__item-name">React + Redux – Professional development</p>
+        </li>
+        <li class="education__item">
+          <h3 class="education__item-technology">HTML, CSS, JS, TypeScript, Angular</h3>
+          <p class="education__item-term">March 2022 - In Progress</p>
+          <p class="education__item-name">RSSchool (JS/FE Course 2022)</p>
+        </li>
+      </ul>
+    </section>
+    <section class="languages" id="Languages">
+      <h2 class="languages__title">Languages: </h2>
+      <ul class="languages__list">
+        <li class="languages__item">English - Intermediate/Upper-intermediate;</li>
+        <li class="languages__item">Polish - Upper-intermediate;</li>
+        <li class="languages__item">Russian - Native</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div>
+      <a class="footer__name" href="#name">Sergei 
+        <span class="footer__surname">Stekh</span>
+      </a>
+  </div>
+    <a class="footer__link" href="https://rs.school/" target="_blank">
+      <img src="./assets/images/rs_school.svg" alt="rs school logo" class="footer__logo">
+    </a>
+    <a class="footer__git" href="https://github.com/SergeyCodeJs/" target="_blank">
+      <img class="footer__git-logo" src="./assets/images/git-icon.png" alt="github logo">
+      <p class="footer__git-name">SergeyCodeJs</p>
+    </a>
+  </footer>
+</body>
+</html>
+
