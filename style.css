@@ -350,6 +350,7 @@ h2 {
 .skills__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
   margin: 0;
@@ -362,7 +363,7 @@ h2 {
 position: relative;
 width: max-content;
 margin-bottom: 1.5em;
-border: 3px solid #157698;;
+border: 6px solid #f1f4f4;
 padding: 0.6em;
 border-radius: 4px;
 background: #FEFEFE;
