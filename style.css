@@ -248,8 +248,8 @@ h2 {
     display: grid;
     align-items: center;
     height: 100%;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
+    border-top: 1px solid #157698;
+    border-bottom: 1px solid #157698;
   }
 }
 
@@ -363,7 +363,7 @@ h2 {
 position: relative;
 width: max-content;
 margin-bottom: 1.5em;
-border: 6px solid #f1f4f4;
+border: 2px solid rgb(169, 169, 169);
 padding: 0.6em;
 border-radius: 4px;
 background: #FEFEFE;
