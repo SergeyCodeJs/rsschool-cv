@@ -14,6 +14,10 @@ body {
   font-size: 16px;
 }
 
+h2 {
+  text-align: center;
+}
+
 /* Header */
 
 .header {
@@ -61,14 +65,21 @@ body {
 }
 
 .avatar {
-  width: 100%;
+  width: 85%;
   height: auto;
+  margin: 0 auto;
+  padding-top: 5px;
 }
 
 .avatar__img {
   width: 100%;
   height: auto;
-  filter: grayscale(.7);
+  border-radius: 50%;
+}
+
+.personal-info {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .personal-info__name {
@@ -106,6 +117,8 @@ body {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 10px;
+  align-items: center;
+  justify-items: center;
   margin: 0;
   padding: 0;
 }
@@ -115,6 +128,7 @@ body {
   grid-template-columns: 24px 1fr;
   grid-column-gap: 20px;
   align-items: center;
+  justify-items: center;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -169,8 +183,12 @@ body {
 }
 
 @media (min-width: 474px) {
+  h2 {
+    text-align: left;
+  }
+
   .header {
-    padding-top: 35px;
+    padding-top: 60px;
   }
 }
 
@@ -183,6 +201,7 @@ body {
   .avatar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    width: 100%;
   }
 
   .personal-info {
@@ -190,6 +209,8 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
+    margin: 0 0 0 7%;
+    text-align: initial;
   }
 
   .contacts {
@@ -197,6 +218,14 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: center;
+  }
+
+  .contacts-list {
+    justify-items: initial;
+  }
+
+  .contacts-list__item {
+    justify-items: initial;
   }
 }
 
@@ -219,8 +248,8 @@ body {
     display: grid;
     align-items: center;
     height: 100%;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
+    border-top: 1px solid #157698;
+    border-bottom: 1px solid #157698;
   }
 }
 
@@ -281,7 +310,6 @@ body {
 }
 }
 
-
 /* About section */
 
 .about {
@@ -321,23 +349,47 @@ body {
 .skills__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: li;
-  }
+  transition: all .3s ease;
+  filter: brightness(.9);
+}
+
+.skills__list.big {
+  justify-content: center;
+  gap: 30px;
+}
+
+.skills__list:hover {
+  filter: brightness(1);
+}
 
 .skills__item {
 position: relative;
 width: max-content;
 margin-bottom: 1.5em;
-border: 3px solid #157698;;
+border: 2px solid rgb(169, 169, 169);
 padding: 0.6em;
 border-radius: 4px;
 background: #FEFEFE;
 color: #231F20;
+transition: all .6s ease;
+}
+
+.skills__item.small {
+  width: 60px;
+  height: 60px;
+}
+
+.skills__img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .skills__item:before {
@@ -351,6 +403,45 @@ background: #FEFEFE;
 border-radius: 50%;
 counter-increment: li;
 content: counter(li);
+}
+
+.codewars {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  transition: all .3s ease;
+}
+
+.codewars:hover {
+  filter: brightness(1.3);
+}
+
+.codewars__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  .skills__item.small:hover {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 900px) {
+  .skills__item.small {
+    margin-bottom: 40px;
+  }
+
+  .skills__item.small:hover {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+  }
 }
 
 /* Soft skills section */
@@ -434,7 +525,7 @@ content: counter(li);
 
 /* Experience section */
 
-.experience__title {
+.experience__section-title {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -445,12 +536,140 @@ content: counter(li);
 }
 
 .experience__list {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 56.25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .experience__item {
+  width: 100%;
+  position: relative;
+  color: #666666;
+  border: 1px solid #157698;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .3s linear;
+}
+
+.experience__item:hover .experience__img,
+.experience__item:active .experience__img,
+.experience__item:focus .experience__img {
+  filter: blur(2px) brightness(50%);
+}
+
+.experience__item:hover .experience__description,
+.experience__item:active .experience__description,
+.experience__item:focus .experience__description {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+  color: #fff;
+}
+
+.experience__item:hover .experience__technologies-list {
+  top: 0%;
+  opacity: 1;
+  color: #fff;
+}
+
+.experience__img {
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  aspect-ratio: 16/8.4; 
+  height: 100%;
+  transition: all .3s linear;
+}
+
+.experience__description {
+  width: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 300px;
+  left: 0;
+  opacity: 0;
+  transition: all .3s linear;
+  border-radius: 2px;
+  z-index: 5;
+}
+
+.experience__title {
+  color: white;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.experience__technologies-list {
+  padding: 0;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  opacity: 0;
+  transition: all .3s linear;
+  z-index: 5;
+}
+
+.experience__technologies-item {
+  width: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.experience__technologies-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 815px) {
+  .experience__title {
+    font-size: 16px;
+  }
+
+  .experience__technologies-item {
+    width: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .experience__list {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__title {
+    font-size: 20px;
+  }
+
+  .experience__technologies-item {
+    width: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .experience__title {
+    font-size: 14px;
+  }
+
+  .experience__technologies-item {
+    width: 30px;
+  }
+}
+
+
+/* .experience__item {
   position: relative;
   color: #666666;
   padding-bottom: 10px;
@@ -494,7 +713,7 @@ content: counter(li);
 .experience__link:hover {
   filter: drop-shadow(.1px .1px .1px #000);
   transform: scale(1.05);
-}
+} */
 
 /* Education section */
 
