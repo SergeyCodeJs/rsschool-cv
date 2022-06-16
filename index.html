@@ -158,54 +158,40 @@
       <h2 class="code-example__title">Code example :</h2>
       <pre class="code-example__pre">
       <code class="code-example__code">
-import React from "react"
-import "./ModulesList.css"
+import React from 'react'
+import {connect} from 'react-redux'
+import QuestionLayout from './QuestionLayout/QuestionLayout'
+import QuestionPlayer from './QuestionPlayer/QuestionPlayer'
+import Score from './Score/Score'
+import WinModal from '../WinModal/WinModal'
+import GameBirdsList from './GameBirdsList/GameBirdsList'
 
-export default function ModulesList({state, modules, setState}) {
-  
-function changeModule(e, newModule) {
-  e.preventDefault();
-  setState((prevState) => {
-      return {
-          ...prevState,
-          previousModule: prevState.currentModule,
-          currentModule: newModule[0],
-          currentModuleName: newModule[1],
-          currentSubModule: "All questions",
-          data: {
-            ...prevState.data,
-            currentQuestionId: null,
-            isQuestionOpen: false,
-            questionData: null,
-            questionsToShow: 15
-          },
-          search: {
-            ...prevState.search,
-            isSearching: false,
-            searchString: "",
-            foundQuestions: null
-          },
-          showCategories: false,
-          testState: {
-            isShowingTest: false
-          }
-      }
-  })
+function Question({isGameStarted}) {
+    const BirdListElement = isGameStarted
+        ? &lt;GameBirdsList/&gt;
+        : null;
+    const ScoreElement = isGameStarted
+        ? &lt;Score/&gt;
+        : null;
+
+    return (
+      &lt;QuestionLayout&gt;
+      &lt;WinModal/&gt;
+      &lt;QuestionPlayer/&gt;
+            {BirdListElement}
+            {ScoreElement}
+            &lt;/QuestionLayout&gt;
+    )
 }
 
-return (
-  &lt;&gt;
-  &lt;h2 className="modules-wrapper"&gt;Topics:&lt;/h2&gt;
-  &lt;div className="modules-list"&gt;
-    {modules.map((module, idx, arr) => {
-      const active = module[0] === state.currentModule;
-
-      return &lt;div key={idx} className={active ? "single-module active" : "single-module"} onClick={(e) => changeModule(e, module)}>{module[1]}&lt;/div&gt;
-    })}
-  &lt;/div&gt;
-  &lt;/&gt;
-)
+function mapStateToProps({game}) {
+    const {gameLogic: {
+            isGameStarted
+        }} = game;
+    return {isGameStarted}
 }
+
+export default connect(mapStateToProps, null)(Question)
       </code>
     </pre>
     </section>
